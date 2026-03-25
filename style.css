@@ -1,7 +1,42 @@
 *{
-
+margin:0px;
+padding:0px;
 }
 nav{
-    height:300px;
+    height:110px;
+    flex-direction: column;
+}
+.line1{
     border: 2px dotted black;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:5px;
+    margin:5px;
+}
+.line2{
+    border: 2px dotted red;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap : 20px;
+    padding:5px;
+    margin:5px;
+}
+.logo{
+    font-size:24px;
+    flex-grow: 0.5;
+}
+.gap{
+flex-grow:0.7;
+}
+.notification {
+    width: 10px;        /* Your desired width */
+    min-width: 10px;    /* Forces it to stay at 10px */
+    flex-shrink: 0;     /* Prevents flexbox from stretching it */
+    flex-grow: 0;       /* Prevents it from taking extra space */
+    overflow: hidden;   /* Ensures content doesn't force it wider */
+    padding: 0;         /* Removes padding that adds to width */
 }
