@@ -50,3 +50,54 @@ flex: 0 0 67%;
 .words{
     color:white;
 }
+main{
+    min-height:100vh;
+}
+.footer-parent{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    width:1vp;
+    border: 2px solid #333;
+    padding: 4px;
+    background-color:#999da7 ;
+}
+.top-row{
+    display: flex; /*keeps 1,2,3 div in row */
+    gap: 5px;
+}
+
+.bottom-section{
+    display:flex;
+    flex-direction:column;  /* bottom divs are in column now */
+    gap: 5px;
+}
+
+.web-info{
+    flex: 1;
+    height:60px;
+    border : 2px solid #333;
+    background-color: #81b0be;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+.quote{
+     display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;     /* Centers content vertically */
+  height: 60px; 
+  border: 2px solid #333;
+
+}
+.GoodBye{
+     display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;     /* Centers content vertically */
+  height: 60px; 
+  border: 2px solid #333;
+  font-size: 20px;
+}
