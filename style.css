@@ -12,8 +12,9 @@ nav{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    padding:5px;
-    margin:5px;
+    gap:0px;
+    width:100%;
+    background-color: #36454F;
 }
 .line2{
     border: 2px dotted red;
@@ -22,23 +23,32 @@ nav{
     align-items:center;
     justify-content: space-between;
     gap : 20px;
-    padding:5px;
-    margin:5px;
+    background-color: #101010;
 }
 .logo{
     font-size:24px;
     flex-grow: 0.5;
+    color:#39FF14;
+    align-self: center;
 }
 .gap{
-flex-grow:0.7;
+flex: 0 0 67%;
 }
 .notification {
-    width: 10px;        /* Your desired width */
-    min-width: 10px;    /* Forces it to stay at 10px */
-    flex-shrink: 0;     /* Prevents flexbox from stretching it */
-    flex-grow: 0;       /* Prevents it from taking extra space */
-    overflow: hidden;   /* Ensures content doesn't force it wider */
-    padding: 0;         /* Removes padding that adds to width */
+    flex: 0 0 1%;
+    border:2px dotted blue;
+}
+.profile{
+    flex: 0 0 20%;
+    border:2px dotted blue;
+}
+.searchbar{
+    flex:0 0 17%;
+    border:2px dotted blue;
+    display: flex;
+}
+.words{
+    color:white;
 }
 main{
     min-height:100vh;
