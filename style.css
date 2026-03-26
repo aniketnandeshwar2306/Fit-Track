@@ -12,9 +12,8 @@ nav{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    gap:0px;
-    width:100%;
-    background-color: #36454F;
+    padding:5px;
+    margin:5px;
 }
 .line2{
     border: 2px dotted red;
@@ -23,30 +22,56 @@ nav{
     align-items:center;
     justify-content: space-between;
     gap : 20px;
-    background-color: #101010;
+    padding:5px;
+    margin:5px;
 }
 .logo{
     font-size:24px;
     flex-grow: 0.5;
-    color:#39FF14;
-    align-self: center;
 }
 .gap{
-flex: 0 0 67%;
+flex-grow:0.7;
 }
 .notification {
-    flex: 0 0 1%;
-    border:2px dotted blue;
+    width: 10px;        /* Your desired width */
+    min-width: 10px;    /* Forces it to stay at 10px */
+    flex-shrink: 0;     /* Prevents flexbox from stretching it */
+    flex-grow: 0;       /* Prevents it from taking extra space */
+    overflow: hidden;   /* Ensures content doesn't force it wider */
+    padding: 0;         /* Removes padding that adds to width */
 }
-.profile{
-    flex: 0 0 20%;
-    border:2px dotted blue;
+main{
+    min-height:100vh;
 }
-.searchbar{
-    flex:0 0 17%;
-    border:2px dotted blue;
-    display: flex;
+.footer-parent{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    width:1vp;
+    border: 2px solid #333;
+    padding: 4px;
+    background-color:#999da7 ;
 }
-.words{
+.top-row{
+    display: flex; /*keeps 1,2,3 div in row */
+    gap: 5px;
+}
+
+.bottom-section{
+    display:flex;
+    flex-direction:column;  /* bottom divs are in column now */
+    gap: 5px;
+}
+
+.web-info{
+    flex: 1;
+    height:60px;
+    border : 2px solid #333;
+    background-color: #81b0be;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
 }
